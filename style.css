@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+/* Css-reset */
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+} 
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+/* Css-variable */
+
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+--Dark-cyan: hsl(184, 100%, 22%);
+--Very-dark-cyan: hsl(179, 100%, 13%);
+--Transparent-white : hsla(0, 0%, 100%, 0.75);
+--Very-light-gray : hsl(0, 0%, 95%);
+
+}
+
+/* Body-section */
+
+body {
+    font-family: 'Big Shoulders Display', cursive;
+   font-size: 1rem;
+ 
+}
+
+/* Container-section */
+
+.container {
+    display: flex;
+    background-color: var(--Very-light-gray);
+   position: absolute;
+   padding: 5rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+}
+.container h1 {
+    text-transform: uppercase;
+    font-family: Lexend Deca;
+    margin: 1rem 0rem;
+    color: white;
+    font-weight: 700;
+}
+.container p {
+    line-height: 16px;
+    color: white;
+    font-weight: 400;
+}
+
+/* Box-section */
+
+.container .box {
+   padding: 1rem 3rem 1rem 2rem;
+}
+.container .box img {
+   max-width: 30%;
+   margin: 1rem 0rem;
+}
+.container .box input {
+    font-family:'Big Shoulders Display', cursive;
+    margin: 4rem 0rem 1rem 0rem;
+    border-radius: 10px;
+   padding: 0.4rem 2rem;
+   font-size: 1rem;
+}
+
+#box1 {
+    background-color: var(--Bright-orange);
+    border-radius: 5px 0px 0px 5px;
+}
+#box1 input {
+    color: var(--Bright-orange);
+}
+#box1 input:hover {
+    color: white;
+    background-color: var(--Bright-orange);
+    cursor: pointer;
+    border: 1px solid white;
+}
+#box2 {
+    background-color: var(--Dark-cyan);
+}
+#box2 input:hover {
+    color: white;
+    background-color: var(--Dark-cyan);
+    cursor: pointer;
+    border: 1px solid white;
+}
+#box2 input {
+    color: var(--Dark-cyan);
+}
+#box3 {
+background-color: var(--Very-dark-cyan);
+border-radius: 0px 5px 5px 0px;
+}
+#box3 input {
+    color: var(--Very-dark-cyan);
+}
+#box3 input:hover {
+    color: white;
+    background-color: var(--Very-dark-cyan);
+    cursor: pointer;
+    border: 1px solid white;
+}
+.attribution {
+    font-size: 11px;
+   
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+/* Media-section */
+
+@media  screen and (max-width:500px) {
+    .container {
+        flex-direction: column;
+        padding: 2rem;
+        height: 100vh;
+    }
+    #box1 {
+        border-radius: 5px 5px 0px 0px;
+    }
+    #box3 {
+        border-radius: 0px 0px 5px 5px;
+    }
+}
